@@ -1,0 +1,41 @@
+La idea del proyecto es hacer un software // algoritmo con el que se puedan guardar las estadisticas de las intervenciones del servicio de guardavidas en verano en claromeco.
+
+El metodo de agregado sera en un pricipio mediante prompts , alerts y console.log , mas adelante utilizare inputs y tablas para mostrar los datos .
+
+Turnos = TURNO TARDE - TURNO MAÑANA
+
+
+Codigos de intervenciones = del 1 al 6.
+
+Codigo 1
+1 - Rescate menor - sin complicaciones.
+
+Codigo 2
+2 - Rescate con intervencion de dos o mas guardavidas - con o sin moto de agua.
+
+Codigo 3
+3 - Rescate de multiples victimas - Supera el numero de guardavias del puesto o presenta alta dificultad.
+
+Codigo 4
+4 - Intervencion con victima en tierra.
+
+Codigo 5 
+5 - Presencia de un ejecutivo en la playa.
+
+Codigo 6
+6 - Niño extraviado ( padres buscando al nene ( nene ausente ) ).
+
+Banderas de estado del mar - Bueno - Dudoso - Peligroso - Prohibido - Tormenta electrica.
+
+Direccion del viento = ( Norte - Noreste/Noroeste ) - ( Sur - Sureste/Suroeste ) - ( Este - Oeste )
+
+la idea es que haya un filtro que solo permita ingresar a usuario1 o usuario2, y cada uno de estos sera uno de los encargados de turno , usuario1 (turno mañana) - usuario2 (turno tarde), asi poder tener un ciclo de algoritmo personalizado para cada uno (LISTO)
+
+SI ADMIN ES IGUAL A USUARIO1 = encargado turno mañana
+SI ADMIN ES IGUAL A USUARIO2 = encargado turno tarde
+
+luego de ingresar , nos dara la opcion para personalizar la hoja del dia de la fecha , ( la idea seria que la fecha se vaya actualizando y vaya quedando un registro guardado de cada dia)
+
+en la hoja se debera ingresar , estado del mar , direccion del viento , marea y a continuacion los hechos registrados , separados por los codigos del 1 al 6 , a su vez en cada codigo realizado se dejara sentada la informacion adecuada segun cada intervencion. cada vez que se registre una entrada de datos, estos deberan ser guardados de alguna manera para poder verlos si es necesario , ( para todo esto es necesaria la interfaz ) 
+
+( por el momento , puedo hacer que los codigos sean numericos de 1 a 6 y que se registre la cantidad de codigos en sumatoria , x ejemplo si introducimos un codigo 1 en la tarde , luego otro y luego otro , en el conteo del dia en el turno tarde , se mostrara que se realizaron 3 codigos 1 , y asi con el resto)
