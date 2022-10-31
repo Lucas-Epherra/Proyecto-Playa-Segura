@@ -5,7 +5,7 @@ El metodo de agregado sera en un pricipio mediante prompts , alerts y console.lo
 Turnos = TURNO TARDE - TURNO MAÑANA
 
 
-Codigos de intervenciones = del 1 al 6.
+[Codigos de intervenciones = del 1 al 6.
 
 Codigo 1
 1 - Rescate menor - sin complicaciones.
@@ -23,9 +23,10 @@ Codigo 5
 5 - Presencia de un ejecutivo en la playa.
 
 Codigo 6
-6 - Niño extraviado ( padres buscando al nene ( nene ausente ) ).
+6 - Niño extraviado ( padres buscando al nene ( nene ausente ) ).]
+El sistema de codigos se contara por acumulacion , cada dia se anotara si se resolvieron 2 codigos 1 , 2 codigo 3 , un codigo 4 etc , se ingresa el nombre del codigo solamente no la descripcion
 
-Banderas de estado del mar - Bueno - Dudoso - Peligroso - Prohibido - Tormenta electrica.
+Banderas de estado del mar - Bueno - Dudoso - Peligroso - Prohibido - Tormenta electrica.(LISTO)
 
 Direccion del viento = ( Norte - Noreste/Noroeste ) - ( Sur - Sureste/Suroeste ) - ( Este - Oeste )
 
