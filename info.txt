@@ -40,3 +40,5 @@ luego de ingresar , nos dara la opcion para personalizar la hoja del dia de la f
 en la hoja se debera ingresar , estado del mar , direccion del viento , marea y a continuacion los hechos registrados , separados por los codigos del 1 al 6 , a su vez en cada codigo realizado se dejara sentada la informacion adecuada segun cada intervencion. cada vez que se registre una entrada de datos, estos deberan ser guardados de alguna manera para poder verlos si es necesario , ( para todo esto es necesaria la interfaz ) 
 
 ( por el momento , puedo hacer que los codigos sean numericos de 1 a 6 y que se registre la cantidad de codigos en sumatoria , x ejemplo si introducimos un codigo 1 en la tarde , luego otro y luego otro , en el conteo del dia en el turno tarde , se mostrara que se realizaron 3 codigos 1 , y asi con el resto)
+
+* el simulador en un principio debera ir preguntando por medio de prompts y mostrando la informacion por medio de alerts , a medida que se van guardando en arrays o objetos ( codigos resueltos , bandera del dia , fecha , y todo esto dividido en los dos turnos.)
