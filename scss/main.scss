@@ -1,5 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Ruda", sans-serif;
+  a {
+    color: black;
+  }
+}
 
-@import url('./header.scss');
-@import url('./footer.scss');
-@import url('./layout.scss');
+// import header
+@import './header/header.scss';
+
+//import layout login
+@import './layouts/login.scss';
+
+//import footer
+@import './footer/footer.scss';
 
