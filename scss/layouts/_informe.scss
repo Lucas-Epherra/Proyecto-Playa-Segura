@@ -1,0 +1,16 @@
+.mainBox{
+    background-image: url('../../imagenes/GUARDAVIDAS2-696x461.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .caja-formulario{
+        background: linear-gradient(311deg, rgba(255, 0, 0, 0.483) 0%, rgba(246, 255, 0, 0.488) 100%);
+        padding: 50px;
+        border-radius: 20px;
+    }
+}

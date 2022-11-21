@@ -11,11 +11,14 @@
 }
 
 // import header
-@import './header/header.scss';
+@import './header/header';
 
 //import layout login
-@import './layouts/_login.scss';
+@import './layouts/login';
+
+//import layout formularios
+@import './layouts/informe';
 
 //import footer
-@import './footer/footer.scss';
+@import './footer/footer';
 

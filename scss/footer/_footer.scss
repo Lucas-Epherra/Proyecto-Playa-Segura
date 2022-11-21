@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(311deg, rgb(255, 0, 0) 0%, rgba(245, 255, 0, 1) 100%);
+
+    .sociales{
+
+        .listaFooter{
+            display: flex;
+            padding: 10px;
+            .social{
+                padding: 10px;
+            }
+        }
+    }
+}

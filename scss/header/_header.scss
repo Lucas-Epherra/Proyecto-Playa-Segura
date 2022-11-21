@@ -1,0 +1,22 @@
+.header {
+    
+    .bg-personalizado {
+        background: linear-gradient(311deg, rgba(255, 0, 0, 1) 0%, rgba(245, 255, 0, 1) 100%);
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: center;
+        align-content: center;
+
+        div a .logo{
+            border-radius: 100%;
+        }
+
+        .titulo-header{
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}
