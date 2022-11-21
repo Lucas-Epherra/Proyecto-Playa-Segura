@@ -3,10 +3,9 @@
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
   },
-  "name": "p.final-epherra-coder-js",
+  "name": "p.final-epherra-coder",
   "version": "1.0.0",
   "main": "main.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
@@ -22,5 +21,6 @@
     "url": "https://github.com/Lucas-Epherra/P.FINAL-EPHERRA-CODER-JS/issues"
   },
   "homepage": "https://github.com/Lucas-Epherra/P.FINAL-EPHERRA-CODER-JS#readme",
+  "devDependencies": {},
   "description": ""
 }

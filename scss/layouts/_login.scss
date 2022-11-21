@@ -1,0 +1,66 @@
+.loginSite {
+    background-image: url('../../imagenes/Foto-de-Valen-Vitolla-1-750x536.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .titulo{
+        margin:50px;
+        font-weight: 700;
+        padding: 15px;
+        background-color:  rgba(22, 21, 21, 0.517);
+        border: solid black 1px;
+        border-radius: 15px;
+        color: rgb(255, 225, 0);
+    }
+
+    .loginBox {
+        background-color: rgba(22, 21, 21, 0.517);
+        padding: 50px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        height: fit-content;
+        border: solid rgba(255, 255, 255, 0.527) 2px;
+
+        .tituloLogin {
+            margin-top: 15px;
+            text-align: center;
+            color: rgb(255, 225, 0);
+        }
+
+
+        .formulario {
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+
+            
+            .label {
+                font-weight: 400;
+                font-size: larger;
+                color: white;
+            }
+
+
+            .inputStyle {
+                border-radius: 5px;
+                border: solid white 2px;
+                padding: 5px;
+                margin: 5px;
+
+            }
+
+            .boton {
+                margin-top: 10px;
+            }
+        }
+    }
+}
