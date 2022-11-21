@@ -19,8 +19,8 @@
   align-content: center; }
   .header .navbar div a .logo {
     border-radius: 100%; }
-  .header .navbar .titulo-header {
-    font-size: 20px;
+  .header .navbar .tituloHeader {
+    font-size: 25px;
     font-weight: 700; }
 
 .loginSite {
@@ -59,17 +59,33 @@
       flex-direction: column;
       align-items: center;
       padding: 15px; }
-      .loginSite .loginBox .formulario .label {
-        font-weight: 400;
-        font-size: larger;
-        color: white; }
-      .loginSite .loginBox .formulario .inputStyle {
-        border-radius: 5px;
-        border: solid white 2px;
-        padding: 5px;
-        margin: 5px; }
       .loginSite .loginBox .formulario .boton {
-        margin-top: 10px; }
+        background-color: #dfe1df;
+        font-weight: 500;
+        padding: 6px;
+        margin: 7px;
+        border-radius: 10px;
+        color: black; }
+      .loginSite .loginBox .formulario .inputs {
+        background-color: #fcfffdd1;
+        border: 0.5px solid black;
+        padding: 5px;
+        border-radius: 15px;
+        display: block;
+        width: 100%;
+        margin: 0px 0px 15px 0px; }
+        .loginSite .loginBox .formulario .inputs::placeholder {
+          color: black;
+          font-weight: 400; }
+        .loginSite .loginBox .formulario .inputs:focus {
+          background-color: #fafafa; }
+        .loginSite .loginBox .formulario .inputs:hover {
+          background-color: #fafafa;
+          transition: 1ms; }
+      .loginSite .loginBox .formulario .label {
+        font-weight: bold;
+        color: #fafafa;
+        padding: 3px; }
 
 .mainBox {
   background-image: url("../../imagenes/GUARDAVIDAS2-696x461.jpg");
@@ -81,17 +97,70 @@
   align-items: center;
   justify-content: center; }
   .mainBox .caja-formulario {
-    background: linear-gradient(311deg, rgba(255, 0, 0, 0.483) 0%, rgba(246, 255, 0, 0.488) 100%);
+    background-color: rgba(255, 0, 0, 0.748);
     padding: 50px;
-    border-radius: 20px; }
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    align-self: center;
+    border: #fafafa solid 1px; }
+    .mainBox .caja-formulario .tituloForm {
+      color: #ffd000;
+      font-weight: bold; }
+    .mainBox .caja-formulario .boton {
+      background-color: #dfe1df;
+      font-weight: 500;
+      padding: 4px;
+      margin: 3px;
+      border-radius: 10px;
+      color: black; }
+      .mainBox .caja-formulario .boton:hover {
+        transform: scale(1.05, 1.05);
+        font-weight: 600;
+        color: black; }
+    .mainBox .caja-formulario .inputs {
+      background-color: #fcfffdd1;
+      border: 0.5px solid black;
+      padding: 5px;
+      border-radius: 15px;
+      display: block;
+      width: 100%;
+      margin: 0px 0px 15px 0px; }
+      .mainBox .caja-formulario .inputs::placeholder {
+        color: black;
+        font-weight: 400; }
+      .mainBox .caja-formulario .inputs:focus {
+        background-color: #fafafa; }
+      .mainBox .caja-formulario .inputs:hover {
+        background-color: #fafafa;
+        transition: 1ms; }
+    .mainBox .caja-formulario .label {
+      font-weight: bold;
+      color: #fafafa;
+      padding: 3px; }
 
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(311deg, red 0%, #f5ff00 100%); }
   .footer .sociales .listaFooter {
     display: flex;
     padding: 10px; }
     .footer .sociales .listaFooter .social {
       padding: 10px; }
+  .footer .logoFooter a .logo {
+    border-radius: 100%;
+    align-self: center;
+    padding-bottom: 10px;
+    margin-left: 44px; }
+  .footer .logoFooter .tituloFooter {
+    font-size: 20px;
+    font-weight: 700;
+    align-self: center; }

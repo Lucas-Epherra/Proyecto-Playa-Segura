@@ -15,5 +15,5 @@ const login = () => {
 }
 
 //evento agregado al boton de inicio de sesion
-let boton = document.getElementById("boton")
+let boton = document.getElementById("btn-login")
 boton.addEventListener("click", login)

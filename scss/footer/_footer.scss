@@ -1,7 +1,8 @@
 .footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background: linear-gradient(311deg, rgb(255, 0, 0) 0%, rgba(245, 255, 0, 1) 100%);
 
     .sociales{
@@ -13,5 +14,19 @@
                 padding: 10px;
             }
         }
+    }
+
+    .logoFooter {
+        a .logo{
+            border-radius: 100%;
+            align-self: center;
+            padding-bottom: 10px;
+            margin-left: 44px;
+        }
+    .tituloFooter {
+        font-size: 20px;
+        font-weight: 700;
+        align-self: center;
+    }
     }
 }

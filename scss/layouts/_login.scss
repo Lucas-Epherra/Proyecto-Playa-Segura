@@ -1,18 +1,18 @@
 .loginSite {
     background-image: url('../../imagenes/Foto-de-Valen-Vitolla-1-750x536.jpg');
     background-repeat: no-repeat;
-    background-size:cover;
-    height:100vh;
+    background-size: cover;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    .titulo{
-        margin:50px;
+    .titulo {
+        margin: 50px;
         font-weight: 700;
         padding: 15px;
-        background-color:  rgba(22, 21, 21, 0.517);
+        background-color: rgba(22, 21, 21, 0.517);
         border: solid black 1px;
         border-radius: 15px;
         color: rgb(255, 225, 0);
@@ -41,26 +41,46 @@
             flex-direction: column;
             align-items: center;
             padding: 15px;
-            
 
-            
-            .label {
-                font-weight: 400;
-                font-size: larger;
-                color: white;
-            }
-
-
-            .inputStyle {
-                border-radius: 5px;
-                border: solid white 2px;
-                padding: 5px;
-                margin: 5px;
-
-            }
 
             .boton {
-                margin-top: 10px;
+                background-color: #dfe1df;
+                font-weight: 500;
+                padding: 6px;
+                margin: 7px;
+                border-radius: 10px;
+                color: black;
+            }
+
+            .inputs {
+                background-color: #fcfffdd1;
+                border: 0.5px solid black;
+                padding: 5px;
+                border-radius: 15px;
+                display: block;
+                width: 100%;
+                margin: 0px 0px 15px 0px;
+
+                &::placeholder {
+                    color: rgb(0, 0, 0);
+                    font-weight: 400;
+                }
+
+                &:focus {
+                    background-color: #fafafa;
+                }
+
+                &:hover {
+                    background-color: #fafafa;
+                    transition: 1ms;
+                }
+
+            }
+
+            .label {
+                font-weight: bold;
+                color: #fafafa;
+                padding: 3px;
             }
         }
     }
