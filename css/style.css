@@ -24,7 +24,7 @@
     font-weight: 700; }
 
 .loginSite {
-  background-image: url("../../imagenes/Foto-de-Valen-Vitolla-1-750x536.jpg");
+  background-image: url("../imagenes/Foto-de-Valen-Vitolla-1-750x536.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -88,7 +88,7 @@
         padding: 3px; }
 
 .mainBox {
-  background-image: url("../../imagenes/GUARDAVIDAS2-696x461.jpg");
+  background-image: url("../imagenes/GUARDAVIDAS2-696x461.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
