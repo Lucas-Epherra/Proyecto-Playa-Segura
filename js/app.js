@@ -1,10 +1,10 @@
 
 //Declaraciones
 let fecha = [],
- puesto = [],
- viento = [],
- mar = [],
- codigo = [];
+    puesto = [],
+    viento = [],
+    mar = [],
+    codigo = [];
 
 let cantidadDatos;
 let fila;
@@ -36,7 +36,6 @@ const agregarStorage = () => {
 // funcion para recuperar los elementos del storage y mostrarlos en la tabla
 
 const llenarTabla = () => {
-    agregarStorage();
 
     tbody = document.getElementById('tbody')
 
@@ -48,9 +47,9 @@ const llenarTabla = () => {
     mar = JSON.parse(localStorage.getItem("estado del mar"));
     codigo = JSON.parse(localStorage.getItem("codigo"));
 
-    cantidadDatos = fecha.length;
+    cantidadDatos = viento.length;
 
-    for (let i = 0; i < cantidadDatos ; i++){
+    for (let i = 0; i < cantidadDatos; i++) {
 
         fila = document.createElement('tr');
 
@@ -59,18 +58,24 @@ const llenarTabla = () => {
         celdaViento = document.createElement('td');
         celdaMar = document.createElement('td');
         celdaCodigo = document.createElement('td');
-        
+
         nodoTextoFecha = document.createTextNode(fecha[i]);
         nodoTextoPuesto = document.createTextNode(puesto[i]);
         nodoTextoViento = document.createTextNode(viento[i]);
         nodoTextoMar = document.createTextNode(mar[i]);
         nodoTextoCodigo = document.createTextNode(codigo[i]);
 
-        fila.appendChild(celdaFecha.appendChild(nodoTextoFecha));
-        fila.appendChild(celdaPuesto.appendChild(nodoTextoPuesto));
-        fila.appendChild(celdaViento.appendChild(nodoTextoViento));
-        fila.appendChild(celdaMar.appendChild(nodoTextoMar));
-        fila.appendChild(celdaCodigo.appendChild(nodoTextoCodigo));
+        celdaFecha.appendChild(nodoTextoFecha);
+        celdaPuesto.appendChild(nodoTextoPuesto);
+        celdaViento.appendChild(nodoTextoViento);
+        celdaMar.appendChild(nodoTextoMar);
+        celdaCodigo.appendChild(nodoTextoCodigo);
+
+        fila.appendChild(celdaFecha);
+        fila.appendChild(celdaPuesto);
+        fila.appendChild(celdaViento);
+        fila.appendChild(celdaMar);
+        fila.appendChild(celdaCodigo);
 
         tbody.appendChild(fila);
     }
