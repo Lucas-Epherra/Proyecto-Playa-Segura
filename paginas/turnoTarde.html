@@ -90,62 +90,25 @@
 
           <label for="Eventos" class="label">Eventos ocurridos</label>
 
-          <input class="inputs form-control" name="Eventos" type="text" id="formText">
+          <select name="Codigos" class="form-control inputs" id="seleccionarCodigos">
 
-          <input type="button" class="btn btn-light boton" value="Enviar">
+            <option value="codigo 1">codigo 1</option>
+            <option value="codigo 2">codigo 2</option>
+            <option value="codigo 3">codigo 3</option>
+            <option value="codigo 4">codigo 4</option>
 
-          <input type="reset" class="btn btn-light boton" value="Reiniciar">
+          </select>
+
+          <input type="button" id="enviar" class="btn btn-light boton" value="Enviar">
+
+          <input type="reset" id="reset" class="btn btn-light boton" value="Reiniciar">
 
         </form>
 
       </div>
 
       <div class="container">
-        <table class="table table-secondary">
-          <thead>
-            <tr>
-              <th scope="col">Fecha</th>
-              <th scope="col">Puesto</th>
-              <th scope="col">Viento</th>
-              <th scope="col">Estado del mar</th>
-              <th scope="col">Codigos</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-              <td>@twitter</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-              <td>@twitter</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="col-md-8" id="product-list">
       </div>
     </div>
 

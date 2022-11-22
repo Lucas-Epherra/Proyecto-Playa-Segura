@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Playas seguras</title>
+</head>
+
+<body>
+  <!-------------------- comienzo del header --------------------->
+
+  <header class="header">
+
+    <nav class="navbar bg-personalizado">
+
+      <div>
+        <a class="navbar-brand tituloHeader" href="../index.html">
+          <img class="logo"
+            src="../imagenes/depositphotos_11905024-stock-illustration-grunge-lifeguard-rubber-stamp-vector.jpg"
+            alt="Logo" width="60" height="60" class="d-inline-block align-text-top" /> Playas Seguras
+        </a>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!-------------------- comienzo del main --------------------->
+
+  <main>
+
+    <div class="mainBox">
+
+      <!-- formulario de datos (fecha-direccion del viento-estado del mar-puesto-eventos ocurridos(codigos)) -->
+      <div class="caja-formulario container">
+
+        <!-- titulo -->
+
+        <h1 class="tituloForm" id="turno" >Claromeco - Turno Mañana</h1>
+
+        <form action="" class="formulario form-body">
+
+          <label for="Fecha" class="label">Fecha</label>
+
+          <input class="inputs form-control" name="Fecha" type="date" id="formText">
+
+          <label for="Puestos" class="label">Puesto</label>
+
+          <select name="Puestos" class="form-control inputs" id="seleccionarPuesto">
+
+            <option value="Samoa">Samoa</option>
+            <option value="Anexo">Anexo</option>
+            <option value="Nahuel">Nahuel</option>
+            <option value="37">37</option>
+            <option value="Cazadores">Cazadores</option>
+            <option value="Plumas">Plumas</option>
+
+          </select>
+
+          <label for="Vientos" class="label">Direccion del viento</label>
+
+          <select name="Vientos" class="form-control inputs" id="seleccionarViento">
+
+            <option value="Norte">Norte</option>
+            <option value="Nor-Este">Nor-Este</option>
+            <option value="Nor-Oeste">Nor-Oeste</option>
+            <option value="Este">Este</option>
+            <option value="Oeste">Oeste</option>
+            <option value="Sur">Sur</option>
+            <option value="Sur-Este">Sur-Este</option>
+            <option value="Sur-Oeste">Sur-Oeste</option>
+
+          </select>
+
+          <label for="Estado" class="label">Estado del mar</label>
+
+          <select name="Estado" class="form-control inputs" id="seleccionarEstadoDelMar">
+            <option value="Bueno">Bueno</option>
+            <option value="Dudoso">Dudoso</option>
+            <option value="Peligroso">Peligroso</option>
+            <option value="Prohibido">Prohibido</option>
+            <option value="Rayos">Rayos</option>
+
+          </select>
+
+          <label for="Eventos" class="label">Eventos ocurridos</label>
+
+          <select name="Codigos" class="form-control inputs" id="seleccionarCodigos">
+
+            <option value="codigo 1">codigo 1</option>
+            <option value="codigo 2">codigo 2</option>
+            <option value="codigo 3">codigo 3</option>
+            <option value="codigo 4">codigo 4</option>
+
+          </select>
+
+          <input type="button"  id="enviar" class="btn btn-light boton" value="Enviar">
+
+          <input type="reset"  id="reset"  class="btn btn-light boton" value="Reiniciar">
+
+        </form>
+
+      </div>
+
+      <div class="container">
+        <div class="col-md-8" id="product-list">
+      </div>
+    </div>
+
+  </main>
+
+  <!------------------ comienzo del footer ---------------------->
+
+  <footer class="footer">
+
+    <div class="sociales">
+
+      <ul class="listaFooter">
+
+        <li><a href=""><img src="../imagenes/instagram.svg" class="social" alt="Instagram" /></a></li>
+
+        <li><a href=""><img src="../imagenes/facebook.svg" class="social" alt="Facebook" /></a></li>
+
+        <li><a href=""><img src="../imagenes/linkedin.svg" class="social" alt="Linkedin" /></a></li>
+
+      </ul>
+
+    </div>
+
+    <div class="logoFooter">
+      <a class="navbar-brand" href="../index.html">
+        <img class="logo"
+          src="../imagenes/depositphotos_11905024-stock-illustration-grunge-lifeguard-rubber-stamp-vector.jpg"
+          alt="Logo" width="60" height="60" class="d-inline-block align-text-top" />
+        <p class="tituloFooter">Playas Seguras</p>
+      </a>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="../js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,8 +1,7 @@
 //declaracion de variables para los usuarios
 let user;
 let password;
-let usuarioIngresado;
-let passIngresada;
+let userName;
 
 //funcion de login con validacion de usuario (solo existen esos dos usuarios)
 const login = () => {
@@ -10,9 +9,11 @@ const login = () => {
     password = document.getElementById("contraseña").value;
 
     if (user === "tarde" && password === "admin") {
-        window.location = "./paginas/site.html";
+        window.location = "./paginas/turnoTarde.html";
+        user = localStorage.setItem(user,'encargado tarde')
     } else if (user === "mañana" && password === "admin") {
-        window.location = "./paginas/site.html";
+        window.location = "./paginas/turnoMañana.html";
+        user = localStorage.setItem(user,'encargado mañana')
     }
 }
 
