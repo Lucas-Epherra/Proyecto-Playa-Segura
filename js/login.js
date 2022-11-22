@@ -10,10 +10,10 @@ const login = () => {
 
     if (user === "tarde" && password === "admin") {
         window.location = "./paginas/turnoTarde.html";
-        user = localStorage.setItem(user,'encargado tarde')
+        user = localStorage.setItem('encargado tarde',JSON.stringify(user))
     } else if (user === "mañana" && password === "admin") {
         window.location = "./paginas/turnoMañana.html";
-        user = localStorage.setItem(user,'encargado mañana')
+        user = localStorage.setItem('encargado mañana',JSON.stringify(user))
     }
 }
 
