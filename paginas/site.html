@@ -8,7 +8,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link rel="stylesheet" href="../css/style.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.min.js" integrity="sha512-tQYZBKe34uzoeOjY9jr3MX7R/mo7n25vnqbnrkskGr4D6YOoPYSpyafUAzQVjV6xAozAqUFIEFsCO4z8mnVBXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>Playas seguras</title>
 </head>
 
@@ -38,67 +37,60 @@
     <div class="mainBox">
 
       <!-- formulario de datos (fecha-direccion del viento-estado del mar-puesto-eventos ocurridos(codigos)) -->
-      <div class="caja-formulario">
+      <div class="caja-formulario container">
 
         <!-- titulo -->
 
-        <h1 class="tituloForm">Claromeco - Turno Tarde</h1>
+        <h1 class="tituloForm" id="turno" >Claromeco - Turno Tarde</h1>
 
         <form action="" class="formulario form-body">
 
-          <label for="formText" class="label">Fecha</label>
+          <label for="Fecha" class="label">Fecha</label>
 
-          <input class="inputs form-control" type="date" id="formText">
+          <input class="inputs form-control" name="Fecha" type="date" id="formText">
 
-          <label for="formText" class="label">Puesto</label>
+          <label for="Puestos" class="label">Puesto</label>
 
           <select name="Puestos" class="form-control inputs" id="seleccionarPuesto">
 
-            <optgroup>
-              <option value="Samoa">Samoa</option>
-              <option value="Anexo">Anexo</option>
-              <option value="Nahuel">Nahuel</option>
-              <option value="37">37</option>
-              <option value="Cazadores">Cazadores</option>
-              <option value="Plumas">Plumas</option>
-            </optgroup>
+            <option value="Samoa">Samoa</option>
+            <option value="Anexo">Anexo</option>
+            <option value="Nahuel">Nahuel</option>
+            <option value="37">37</option>
+            <option value="Cazadores">Cazadores</option>
+            <option value="Plumas">Plumas</option>
 
           </select>
 
-          <label for="formText" class="label">Direccion del viento</label>
+          <label for="Vientos" class="label">Direccion del viento</label>
 
-          <select name="Vientos" class="form-control inputs" id="seleccionarPuesto">
+          <select name="Vientos" class="form-control inputs" id="seleccionarViento">
 
-            <optgroup>
-              <option value="Norte">Norte</option>
-              <option value="Nor-Este">Nor-Este</option>
-              <option value="Nor-Oeste">Nor-Oeste</option>
-              <option value="Este">Este</option>
-              <option value="Oeste">Oeste</option>
-              <option value="Sur">Sur</option>
-              <option value="Sur-Este">Sur-Este</option>
-              <option value="Sur-Oeste">Sur-Oeste</option>
-            </optgroup>
+            <option value="Norte">Norte</option>
+            <option value="Nor-Este">Nor-Este</option>
+            <option value="Nor-Oeste">Nor-Oeste</option>
+            <option value="Este">Este</option>
+            <option value="Oeste">Oeste</option>
+            <option value="Sur">Sur</option>
+            <option value="Sur-Este">Sur-Este</option>
+            <option value="Sur-Oeste">Sur-Oeste</option>
 
           </select>
 
-          <label for="formText" class="label">Estado del mar</label>
+          <label for="Estado" class="label">Estado del mar</label>
 
-          <select name="Estado" class="form-control inputs" id="seleccionarPuesto">
-
-            <optgroup>
-              <option value="Bueno">Bueno</option>
-              <option value="Dudoso">Dudoso</option>
-              <option value="Peligroso">Peligroso</option>
-              <option value="Prohibido">Prohibido</option>
-              <option value="Rayos">Rayos</option>
-            </optgroup>
+          <select name="Estado" class="form-control inputs" id="seleccionarEstadoDelMar">
+            <option value="Bueno">Bueno</option>
+            <option value="Dudoso">Dudoso</option>
+            <option value="Peligroso">Peligroso</option>
+            <option value="Prohibido">Prohibido</option>
+            <option value="Rayos">Rayos</option>
 
           </select>
 
-          <label for="formText" class="label">Eventos ocurridos</label>
+          <label for="Eventos" class="label">Eventos ocurridos</label>
 
-          <input class="inputs form-control" type="text" id="formText">
+          <input class="inputs form-control" name="Eventos" type="text" id="formText">
 
           <input type="button" class="btn btn-light boton" value="Enviar">
 
@@ -106,10 +98,54 @@
 
         </form>
 
-        <canvas>
+      </div>
 
-        </canvas>
-
+      <div class="container">
+        <table class="table table-secondary">
+          <thead>
+            <tr>
+              <th scope="col">Fecha</th>
+              <th scope="col">Puesto</th>
+              <th scope="col">Viento</th>
+              <th scope="col">Estado del mar</th>
+              <th scope="col">Codigos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+              <td>@twitter</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+              <td>@twitter</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
@@ -138,7 +174,7 @@
         <img class="logo"
           src="../imagenes/depositphotos_11905024-stock-illustration-grunge-lifeguard-rubber-stamp-vector.jpg"
           alt="Logo" width="60" height="60" class="d-inline-block align-text-top" />
-          <p class="tituloFooter">Playas Seguras</p>
+        <p class="tituloFooter">Playas Seguras</p>
       </a>
     </div>
 
@@ -147,8 +183,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+  <script src="../js/app.js"></script>
 
-  <script src="./js/app.js"></script>
 </body>
 
 </html>

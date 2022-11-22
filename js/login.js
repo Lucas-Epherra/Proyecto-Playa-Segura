@@ -1,6 +1,8 @@
 //declaracion de variables para los usuarios
 let user;
 let password;
+let usuarioIngresado;
+let passIngresada;
 
 //funcion de login con validacion de usuario (solo existen esos dos usuarios)
 const login = () => {

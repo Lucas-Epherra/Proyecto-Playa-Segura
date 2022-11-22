@@ -93,32 +93,34 @@
   background-size: cover;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
+  align-content: center;
+  padding: 2rem; }
   .mainBox .caja-formulario {
     background-color: rgba(255, 0, 0, 0.748);
-    padding: 50px;
+    padding: 1rem;
     border-radius: 20px;
-    margin: 0 auto;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    align-self: center;
+    min-width: fit-content;
     border: #fafafa solid 1px; }
     .mainBox .caja-formulario .tituloForm {
       color: #ffd000;
-      font-weight: bold; }
+      font-weight: bold;
+      text-align: center; }
     .mainBox .caja-formulario .boton {
       background-color: #dfe1df;
       font-weight: 500;
       padding: 4px;
-      margin: 3px;
       border-radius: 10px;
-      color: black; }
+      color: black;
+      margin: 10px 5px 10px 5px; }
       .mainBox .caja-formulario .boton:hover {
         transform: scale(1.05, 1.05);
         font-weight: 600;
@@ -129,8 +131,7 @@
       padding: 5px;
       border-radius: 15px;
       display: block;
-      width: 100%;
-      margin: 0px 0px 15px 0px; }
+      width: 100%; }
       .mainBox .caja-formulario .inputs::placeholder {
         color: black;
         font-weight: 400; }
@@ -143,6 +144,8 @@
       font-weight: bold;
       color: #fafafa;
       padding: 3px; }
+  .mainBox .bg-grafico {
+    background-color: goldenrod; }
 
 .footer {
   display: flex;
@@ -158,7 +161,6 @@
   .footer .logoFooter a .logo {
     border-radius: 100%;
     align-self: center;
-    padding-bottom: 10px;
     margin-left: 44px; }
   .footer .logoFooter .tituloFooter {
     font-size: 20px;
