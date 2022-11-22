@@ -1,25 +1,14 @@
 
 //Declaraciones
-let fecha = [],
+let fecha  = [],
     puesto = [],
     viento = [],
     mar = [],
     codigo = [];
 
+
 let cantidadDatos;
 let fila;
-
-let celdaFecha,
-    celdaPuesto,
-    celdaViento,
-    celdaMar,
-    celdaCodigo;
-
-let nodoTextoFecha,
-    nodoTextoPuesto,
-    nodoTextoViento,
-    nodoTextoMar,
-    nodoTextoCodigo;
 
 //funcion para agregar cada valor del formulario al local storage
 const agregarStorage = () => {
@@ -32,6 +21,19 @@ const agregarStorage = () => {
 
     llenarTabla();
 }
+
+//funcion para agregar cada valor del formulario al local storage
+
+const clearStorage = () => {
+    localStorage.removeItem("fecha");
+    localStorage.removeItem("puesto");
+    localStorage.removeItem("viento");
+    localStorage.removeItem("estado del mar");
+    localStorage.removeItem("codigo");
+
+    borrarDatosTabla();
+}
+
 
 // funcion para recuperar los elementos del storage y mostrarlos en la tabla
 
@@ -47,23 +49,23 @@ const llenarTabla = () => {
     mar = JSON.parse(localStorage.getItem("estado del mar"));
     codigo = JSON.parse(localStorage.getItem("codigo"));
 
-    cantidadDatos = viento.length;
+    cantidadDatos = [0].length;
 
     for (let i = 0; i < cantidadDatos; i++) {
 
         fila = document.createElement('tr');
 
-        celdaFecha = document.createElement('td');
-        celdaPuesto = document.createElement('td');
-        celdaViento = document.createElement('td');
-        celdaMar = document.createElement('td');
-        celdaCodigo = document.createElement('td');
+        let = celdaFecha = document.createElement('td'),
+            celdaPuesto = document.createElement('td'),
+            celdaViento = document.createElement('td'),
+            celdaMar = document.createElement('td'),
+            celdaCodigo = document.createElement('td');
 
-        nodoTextoFecha = document.createTextNode(fecha[i]);
-        nodoTextoPuesto = document.createTextNode(puesto[i]);
-        nodoTextoViento = document.createTextNode(viento[i]);
-        nodoTextoMar = document.createTextNode(mar[i]);
-        nodoTextoCodigo = document.createTextNode(codigo[i]);
+        let = nodoTextoFecha = document.createTextNode(fecha),
+            nodoTextoPuesto = document.createTextNode(puesto),
+            nodoTextoViento = document.createTextNode(viento),
+            nodoTextoMar = document.createTextNode(mar),
+            nodoTextoCodigo = document.createTextNode(codigo);
 
         celdaFecha.appendChild(nodoTextoFecha);
         celdaPuesto.appendChild(nodoTextoPuesto);
@@ -89,3 +91,16 @@ let seleccion = document.getElementById("seleccionar");
 let btn = document.getElementById("enviar");
 
 btn.addEventListener("click", agregarStorage) 
+
+// evento borrar datos de la tabla
+
+let clear = document.getElementById('resetTabla');
+
+clear.addEventListener("click",clearStorage)
+
+//funcion para borrar la fila
+const borrarDatosTabla = () => {
+    
+        tbody.removeChild(fila)
+    
+}
