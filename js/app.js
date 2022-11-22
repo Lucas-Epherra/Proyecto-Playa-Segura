@@ -6,12 +6,13 @@ let fecha  = [],
     mar = [],
     codigo = [];
 
-
 let cantidadDatos;
 let fila;
 
 //funcion para agregar cada valor del formulario al local storage
 const agregarStorage = () => {
+
+    
 
     localStorage.setItem("fecha", JSON.stringify(formFecha.value))
     localStorage.setItem("puesto", JSON.stringify(seleccionarPuesto.value))
@@ -22,6 +23,12 @@ const agregarStorage = () => {
     llenarTabla();
 }
 
+    fecha.push(fecha);
+    puesto.push(puesto);
+    viento.push(viento);
+    mar.push(mar);
+    codigo.push(codigo);
+    
 //funcion para agregar cada valor del formulario al local storage
 
 const clearStorage = () => {
@@ -103,4 +110,13 @@ const borrarDatosTabla = () => {
     
         tbody.removeChild(fila)
     
+}
+
+//condicional para verificar los elementos guardados en l.storage y pasarlos a los array definidos
+if (localStorage.getItem('fecha') != null ){
+    fecha  = JSON.parse(localStorage.getItem('fecha'));
+    puesto = JSON.parse(localStorage.getItem('puesto'));
+    viento = JSON.parse(localStorage.getItem('viento'));
+    mar = JSON.parse(localStorage.getItem('mar'));
+    codigo = JSON.parse(localStorage.getItem('codigo'));
 }
